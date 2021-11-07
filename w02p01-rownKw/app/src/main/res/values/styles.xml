@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditTextNormal">
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">8</item>
+        <item name="android:inputType">numberSigned|numberDecimal</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:hint">Wartość</item>
+    </style>
+
+    <style name="TextViewOpis">
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+</resources>

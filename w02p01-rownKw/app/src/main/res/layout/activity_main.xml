@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+<TextView
+    android:id="@+id/labelA"
+    android:text="a:"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    style="@style/TextViewOpis"
+     />
+
+    <TextView
+        android:id="@+id/labelB"
+        android:text="b:"
+        app:layout_constraintTop_toBottomOf="@id/labelA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/TextViewOpis"/>
+
+    <TextView
+        android:id="@+id/labelC"
+        android:text="c:"
+        app:layout_constraintTop_toBottomOf="@id/labelB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/TextViewOpis"/>
+
+    <EditText
+        android:id="@+id/editA"
+        app:layout_constraintLeft_toRightOf="@id/labelA"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelA"
+        style="@style/EditTextNormal" />
+
+    <EditText
+        android:id="@+id/editB"
+        app:layout_constraintLeft_toRightOf="@id/labelB"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelB"
+        style="@style/EditTextNormal"
+        />
+    <EditText
+        android:id="@+id/editC"
+        app:layout_constraintLeft_toRightOf="@id/labelC"
+        app:layout_constraintBaseline_toBaselineOf="@id/labelC"
+        style="@style/EditTextNormal"
+        />
+    <TextView
+        android:id="@+id/wynik"
+        android:textSize="26sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/buttonZeruj"
+        android:text="Zeruj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="zeruj"/>
+
+    <Button
+        android:id="@+id/buttonLicz"
+        android:text="Licz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonZeruj"
+        android:onClick="licz"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
