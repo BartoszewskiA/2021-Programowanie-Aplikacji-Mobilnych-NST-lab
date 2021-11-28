@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab05p01-przelicznik</string>
+    <string-array name="waluty">
+        <item>Złotówki</item>
+        <item>Euro</item>
+        <item>Dolary</item>
+    </string-array>
+</resources>
