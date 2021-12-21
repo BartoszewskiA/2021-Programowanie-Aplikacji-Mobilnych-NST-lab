@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab06p01-pin</string>
+    <string-array name="urzytkownicy">
+        <item>Jan Kowalski</item>
+        <item>Adam Nowak</item>
+        <item>Olga Kamińska</item>
+    </string-array>
+
+    <string-array name="hasla">
+        <item>1111</item>
+        <item>2222</item>
+        <item>1234</item>
+    </string-array>
+</resources>
